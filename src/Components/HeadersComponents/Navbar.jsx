@@ -17,11 +17,10 @@ export default function Navbar({ navlinks, handleDrawerToogler }) {
   const classes = useStyles();
 
   return (
-    <AppBar
-      position='fixed'
-      className={classes.navbar}
-      style={{ backgroundColor: Theme.colors.base1 }}>
-      <Toolbar className={classes.ToolBar}>
+    <AppBar position='fixed' className={classes.navbar}>
+      <Toolbar
+        className={classes.ToolBar}
+        style={{ backgroundColor: Theme.colors.base1 }}>
         <Typography variant='h5' component='h6'>
           {"< GreatCoders />"}
         </Typography>
