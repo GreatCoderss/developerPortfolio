@@ -11,12 +11,16 @@ import React from "react";
 import { useStyles } from "./HeaderStyles";
 import MenuOpenRoundedIcon from "@material-ui/icons/MenuOpenRounded";
 import { Link } from "react-scroll";
+import { Theme } from "../Theme";
 
 export default function Navbar({ navlinks, handleDrawerToogler }) {
   const classes = useStyles();
 
   return (
-    <AppBar position='fixed' className={classes.navbar}>
+    <AppBar
+      position='fixed'
+      className={classes.navbar}
+      style={{ backgroundColor: Theme.colors.base1 }}>
       <Toolbar className={classes.ToolBar}>
         <Typography variant='h5' component='h6'>
           {"< GreatCoders />"}
